@@ -1,0 +1,16 @@
+--MİN&MAX&ALIAS
+
+SELECT MIN(UnitPrice) from Products // Column name i isimlendirmeden dahil olmadan değeri getirir
+Select MIN(UnitPrice) as MinimumPrice from Products //Column name i isimlendirerek (tek kelime olarak) değeri getirdi
+Select MAX(UnitPrice) as [Minimum Price] from Products //Column name i isimlendirerek (tek kelime olarak) değeri getirdi
+
+--Count&Sum
+
+select count (*) from Customers //customers tablosundaki toplam kayıt sayısını getirdi
+select COUNT (*) from Customers where Country='Germany'
+select sum(UnitsInStock) from Products
+
+--In Operator
+Select * from Customers where Country='Germany'
+select * from Customers where Country in ('Germany','France')
+select COUNT (*) from  Products where CategoryId in (2,3)
